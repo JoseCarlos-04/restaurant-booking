@@ -1,0 +1,13 @@
+<div class="card">
+    <div class="card-header">
+        <p class="card-text">Reserva {{ bookInput.status }}  para {{ bookInput.persons }} personas el día {{ bookInput.date }}</p>
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">{{ bookInput.client }} - {{ bookInput.phone }}</h5>
+      <p class="card-text">Email: {{ bookInput.email }}</p>
+      <p class="card-text">Nº personas: {{ bookInput.persons }}</p>
+      <p class="card-text">Notas del cliente: {{ bookInput.notes }}</p>
+      <button (click)="modifyBook(bookInput.id)" class="btn btn-primary">Modificar reserva</button>
+      <button (click)="deleteBook(bookInput.id)" class="btn btn-primary">Borrar reserva</button>
+    </div>
+  </div>
